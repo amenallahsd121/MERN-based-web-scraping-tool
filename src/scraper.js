@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 
 const scrapeData = async () => {
-    const url = 'https://www.dataroma.com/m/ins/ins.php?t=m&po=1&am=50000&sym=&o=fd&d=d';
+    const url = 'https://www.dataroma.com/m/ins/ins.php?t=m&po=1&am=50000&sym=&o=fd&d=d'; //change with the URL of the website you wanna scrap
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto(url);
